@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="DM">
+  <head>
+    <meta charset="utf-8">
+    <title>Dir</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cerulean/bootstrap.min.css" type="text/css">
+  </head>
+
+  <body ng-controller="homeCtrl">
+
+    <!-- make modal directive. Attr that passes value form controller -->
+    <modal-directive posts="posts" user-name="{{userName}}"></modal-directive>
+
+    <!-- <post-list posts="posts" user-name='{{userName}}'></post-list> -->
+
+    <ui-view></ui-view>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <script src="src/app.js" charset="utf-8"></script>
+    <script src="src/mainCtrl.js" charset="utf-8"></script>
+    <script src="src/directive.js" charset="utf-8"></script>
+    <script src="src/mainSrc.js" charset="utf-8"></script>
+    <script src="src/postList.js" charset="utf-8"></script>
+    <script src="src/modalDirective.js" charset="utf-8"></script>
+  </body>
+</html>
